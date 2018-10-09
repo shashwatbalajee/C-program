@@ -1,0 +1,41 @@
+#include<stdio.h>
+void main()
+{
+int n;
+printf("enter the number");
+scanf("%d",&n);
+printf("enter the number is",%d);
+}
+
+2.This file contains so-called function prototypes of functions such as printf() , scanf() , ... so that compiler knows what are their parameters and return values.
+
+
+
+3.printf function is used to print the character, string, float, integer values onto the output screen.
+
+
+4.main is the entry point of the program.
+
+
+5.Variable is which we can change i.e., has no fixed values.
+
+
+6.local variables and global variables
+
+
+7. & operator is used to indicate the address of a variable.
+
+
+8.%d refers to the integer. It is a format specifier.
+
+
+9.Compilation of program means converting high level language into machine level language.
+
+
+10.Running the program means executing the code as per the code is written.
+
+
+11. Syntax error means not following the rule of declaring the function or missing important symbols.
+
+
+12. Missing paranthesis, Missing commas,semicolons, writing wrong printf or scanf function.
