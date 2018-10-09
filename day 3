@@ -1,0 +1,238 @@
+#include<stdio.h>
+struct sum{
+    int a;
+    int b;
+    int r;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("Enter two nos.:\n");
+    scanf("%d%d",&s.a,&s.b);
+    return s;
+}
+
+struct sum compute()
+{
+    s.r = s.a + s.b;
+    return s;
+}
+
+struct sum output()
+{
+    printf("Addition of %d and %d is %d\n",s.a,s.b,s.r);
+}
+
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+}
+
+
+Addition of two float:
+
+
+#include<stdio.h>
+struct sum{
+    float a;
+    float b;
+    float r;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("Enter two nos.:\n");
+    scanf("%f%f",&s.a,&s.b);
+    return s;
+}
+
+struct sum compute()
+{
+    s.r = s.a + s.b;
+    return s;
+}
+
+struct sum output()
+{
+    printf("Addition of %f and %f is %f\n",s.a,s.b,s.r);
+}
+
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+}
+
+
+
+
+Compare two numbers:
+
+
+
+#include<stdio.h>
+struct sum{
+    int a;
+    int b;
+    int max;
+    int min;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("Enter two number to compare:\n");
+    scanf("%d%d",&s.a,&s.b);
+    return s;
+}
+
+struct sum compute()
+{
+    if(s.a>s.b){
+    s.max=s.a;
+    s.min=s.b;
+    }
+    else if(s.a<s.b){
+    s.max=s.b;
+    s.min=s.a;
+    }
+    return s;
+}
+
+struct sum output()
+{
+    if(s.max!=s.min){
+    printf("%d is greater than %d\n",s.max,s.min);
+    }
+    else{
+        printf("Both numbers are equal\n");
+    }
+}
+
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+}
+
+
+
+
+
+Compare three numbers:
+
+
+#include<stdio.h>
+struct sum{
+    int a;
+    int b;
+    int c;
+    int max;
+    int e;
+};
+struct sum s;
+
+struct sum input()
+{
+    printf("Enter three number to compare:\n");
+    scanf("%d%d%d",&s.a,&s.b,&s.c);
+    return s;
+}
+
+struct sum compute()
+{
+    if(s.a>s.b && s.a> s.c){
+        s.max=s.a;
+    }
+    else if(s.b>s.a && s.b>s.c){
+        s.max=s.b;
+    }
+    else if(s.c>s.a && s.c>s.b){
+        s.max = s.c;
+    }
+    return s;
+}
+
+struct sum output()
+{
+    if ( s.a == s.b && s.b == s.c)
+    {
+        printf("Every number is equal",s.a);
+    }
+    else
+    {
+        printf("%d is greater in all",s.max);
+    }
+}
+
+int main()
+{
+    struct sum s;
+    input();
+    compute();
+    output();
+}
+
+
+
+
+1.
+ 
+It consist of functions
+Userdefined functions
+Standard library functions
+Main function
+
+---
+
+
+
+2. %d format specifier is used to read an integer from the user while %f is used for reading floating or decimal values input from the user.
+
+
+3. A function is a segment that groups code to perform a specific task.
+
+
+4.Function definition is declaring the function name, parameters and return type.
+
+
+5.A function declaration tells the compiler about a function name and how to call the function.
+
+
+6.To let the compiler know about the user defined function.
+
+
+7.Formal parameters are used to declare some variables that exists in the function.
+
+
+8.Actual parameters are the variables that contains the value which we have to compute in the function.
+
+
+9.If data is passed by value, the data is copied from the variable used in for example main() to a variable used by the function.  
+
+
+10.If data is passed by reference, a pointer to the data is copied instead of the actual variable as is done in a call by value.
+
+
+
+11. Syntax Errors:=
+Missing Parenthesis (})
+Printing the value of variable without declaring it
+Missing semicolon
+
+12. Floating point numbers means that there is no fixed number of digits before and after the decimal point that is, the decimal point can float.
+
+
+13. -2,147,483,648 to 2,147,483,647
+
+
+14.-3.4E+38 to +3.4E+38
